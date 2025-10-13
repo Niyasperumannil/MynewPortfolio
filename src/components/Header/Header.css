@@ -1,0 +1,104 @@
+.hero-section {
+  width: 100%;
+  background-color: #faf8f2;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-subtitle {
+  font-family: Rubik, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 60px;
+  color: rgb(60, 70, 73);
+}
+
+.hero-name {
+  font-family: "Sorts Mill Goudy";
+  font-size: 138px;
+  font-weight: 400;
+  line-height: 100px;
+  color: rgb(28, 37, 40);
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+}
+
+/* Responsive */
+/* Add these at bottom of your CSS */
+
+/* For tablets / medium screens */
+@media (max-width: 992px) {
+  .hero-subtitle {
+    font-size: 32px;
+    line-height: 1.4em;  /* ~ 44-48px */
+  }
+
+  .hero-name {
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  .hero-section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/* For smaller devices / phones */
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 28px;
+    line-height: 1.3em;  /* ~ 36px */
+  }
+
+  .hero-name {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .hero-section {
+    padding: 2.5rem 1rem;
+  }
+}
+
+/* Very small screens (mobile portrait) */
+@media (max-width: 480px) {
+  .hero-subtitle {
+    font-size: 24px;
+    line-height: 1.2em;  /* ~ 28-30px */
+  }
+
+  .hero-name {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .hero-section {
+    padding: 2rem 0.8rem;
+  }
+}

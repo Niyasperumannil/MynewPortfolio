@@ -1,0 +1,146 @@
+.projects-section {
+  background-color: #f9f6f1;
+  padding: 1px 10%;
+  font-family: "Inter", sans-serif;
+  color: #111;
+}
+
+/* Title and layout */
+.projects-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.projects-title {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 140px;
+  font-weight: 400;
+  color: #1c2528;
+  line-height: 1;
+  flex: 1 1 100%;
+}
+
+.projects-description {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 0px;
+  margin-left: 270px;
+  max-width: 600px;
+}
+
+.projects-description .divider {
+  width: 1.5px;
+  background-color: #cfcfcf;
+  height: 80px;
+  margin-top: 5px;
+}
+
+.projects-description p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  color: rgb(40, 45, 48);
+  max-width: 600px;
+}
+
+/* Filter buttons */
+.projects-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+  margin-left: 20px;
+  border-bottom: 1px solid transparent;
+}
+
+.projects-filter button {
+  background: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0b0b0b;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.projects-filter button:hover {
+  color: #ff7a50;
+}
+
+.projects-filter button.active {
+  color: #0b0b0b;
+}
+
+.projects-filter button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 20px;
+  background-color: #ff7a50;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projects-title {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .projects-description {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .projects-description .divider {
+    display: none;
+  }
+
+  .projects-description p {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 90%;
+  }
+
+  .projects-filter {
+    justify-content: center;
+    gap: 25px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 10px 6%;
+  }
+
+  .projects-title {
+    font-size: 54px;
+  }
+
+  .projects-description p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .projects-filter button {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+
+  .projects-filter {
+    gap: 20px;
+  }
+}

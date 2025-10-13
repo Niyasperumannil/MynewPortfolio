@@ -1,0 +1,92 @@
+.profile-section {
+  width: 100%;
+  background-color: #faf8f2;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+}
+
+.profile-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid #ccc;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.profile-intro {
+  font-family: Rubik, sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.6;
+  color: rgb(60, 70, 73);
+  margin: 0;
+  max-width: 600px;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons .icon {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: rgb(60, 70, 73);
+  font-size: 1.5rem;
+}
+
+.metrics-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 20px;
+  gap: 1rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.metric-label {
+  font-family: Rubik, sans-serif;
+  font-size: 1rem;
+  color: rgb(60, 70, 73);
+  margin-bottom: 0.5rem;
+}
+
+.metric-value {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(28, 37, 40);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-text {
+    align-items: center;
+    border-left: none;
+    padding-left: 0;
+  }
+  .profile-intro {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .social-icons {
+    text-align: center;
+  }
+  .metrics-row {
+    justify-content: center;
+  }
+  .metric {
+    align-items: center;
+  }
+}

@@ -1,0 +1,140 @@
+/* Grid wrapper for 4 sections */
+.explore-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  background-color: #f9f6f1;
+  padding: 60px 40px;
+}
+
+/* Individual container */
+.explore-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f6f1;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  width: 45%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Image section */
+.explore-image {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.live-image-link {
+  display: block;
+  position: relative;
+}
+
+.live-preview-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-color: #bcc2d4;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.live-preview-image:hover {
+  transform: scale(1.03);
+}
+
+.live-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  background-color: rgba(22, 16, 16, 0.85);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+/* Text section */
+.explore-text {
+  margin-left: 30px;
+  color: #0d0d0d;
+}
+
+.explore-text h1 {
+  font-family: "Sorts Mill Goudy";
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 1;
+  color: rgb(28, 37, 40);
+}
+
+.explore-text p {
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  margin-left: 5px;
+  font-weight: 300;
+  line-height: 1;
+  color: rgb(60, 70, 73);
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  .explore-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding: 30px 10px;
+  }
+
+  .explore-text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .explore-text h1 {
+    font-size: 60px;
+  }
+
+  .explore-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-grid {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .explore-container {
+    width: 100%;
+  }
+
+  .explore-text h1 {
+    font-size: 48px;
+  }
+
+  .explore-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-text h1 {
+    font-size: 36px;
+  }
+
+  .explore-text p {
+    font-size: 14px;
+  }
+
+  .live-icon {
+    font-size: 16px;
+    padding: 2px 4px;
+  }
+}
