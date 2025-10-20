@@ -7,7 +7,7 @@ const ProfileSection = () => {
       <div className="profile-content">
         <div className="profile-text">
           <p className="profile-intro">
-        I'm a MERN Web Developer based in New York and enjoy building modern web apps. I love coding, exploring new tech, and creating clean digital experiences.
+        I'm a MERN Web Developer based in Kerala and enjoy building modern web apps. I love coding, exploring new tech, and creating clean digital experiences.
           </p>
           <div className="social-icons">
             <a href="#" className="icon">🌐</a>

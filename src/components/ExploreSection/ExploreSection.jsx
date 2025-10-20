@@ -27,9 +27,9 @@ const ExploreSection = () => {
       link: 'https://valluvanadonline.com/',
     },
     {
-      title: 'Cart',
+      title: 'Home Cart',
       subtitle: 'Ecommerce',
-      image: 'https://ober-jekyll.netlify.app/assets/img/works/work1.jpg',
+      image: '/Screenshot 2025-10-20 103215.png',
       link: 'https://shop.mghomecart.com/home',
     },
     {
@@ -37,6 +37,12 @@ const ExploreSection = () => {
       subtitle: 'Uniform',
       image: 'https://romosgarments.com/wp-content/uploads/2025/07/Romos-Icon-e1752513589489.png',
       link: 'https://romosgarments.com/',
+    },
+    {
+      title: 'Hospital',
+      subtitle: 'Dental',
+      image: '\Screenshot 2025-10-20 103244.png',
+      link: 'https://docter-backend.vercel.app/',
     },
   ];
 

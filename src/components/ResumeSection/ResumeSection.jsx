@@ -71,19 +71,15 @@ export default function ResumeSection() {
       title: "MERN/MEAN Stack Developer",
       desc: "Recognized for outstanding MERN/MEAN stack projects showcasing innovation, performance, and design excellence.",
     },
-    {
-      year: "2023",
-      title: "JavaScript Algorithms & Data Structures",
-      desc: "Certified by freeCodeCamp for problem-solving and advanced JavaScript development.",
-    },
+    
   ];
 
   // ✅ Function to handle CV download
   const handleDownloadCV = () => {
     // ✅ Replace with your actual file path inside public/
     const link = document.createElement("a");
-    link.href = "/Muhammed_Niyas_CV.pdf"; // <-- put your actual PDF file name here
-    link.download = "Muhammed_Niyas_CV.pdf";
+    link.href = "\Muhammed Niyas P.pdf"; // <-- put your actual PDF file name here
+    link.download = "\Muhammed Niyas P.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

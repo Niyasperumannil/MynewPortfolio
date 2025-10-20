@@ -56,7 +56,14 @@ export default function AboutMeSection() {
     meaningful digital experiences that inspire.
   </p>
 
-  <button className="contact-btn">Contact Me</button>
+<button
+  className="contact-btn"
+  onClick={() =>
+    window.open("https://wa.me/9778340818", "_blank")
+  }
+>
+  Contact Me
+</button>
 
   {/* Signature (optional)
   <img
