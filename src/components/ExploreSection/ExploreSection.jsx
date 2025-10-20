@@ -27,9 +27,9 @@ const ExploreSection = () => {
       link: 'https://valluvanadonline.com/',
     },
     {
-      title: 'Home Cart',
+      title: 'Cart',
       subtitle: 'Ecommerce',
-      image: '/Screenshot 2025-10-20 103215.png',
+      image: 'https://ober-jekyll.netlify.app/assets/img/works/work1.jpg',
       link: 'https://shop.mghomecart.com/home',
     },
     {
